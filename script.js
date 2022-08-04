@@ -62,6 +62,7 @@ function addTodo(title, completed) {
     } else {
       span.style.textDecoration = "line-through";
     }
+    saveTodo();
   };
   deleteBtn.onclick = () => {
     todoCtn.removeChild(div);
